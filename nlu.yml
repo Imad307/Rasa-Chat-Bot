@@ -1,0 +1,87 @@
+version: "3.1"
+
+nlu:
+- intent: greet
+  examples: |
+    - hey
+    - hello
+    - hi
+    - hello there
+    - good morning
+    - good evening
+    - moin
+    - hey there
+    - let's go
+    - hey dude
+    - goodmorning
+    - goodevening
+    - good afternoon
+
+- intent: register
+  examples: |
+    - How can i register for a new account on PTCL Touch App?
+    - how can i register?
+    - how can i register for a new account?
+    - i want to establish a connection request how can i register?
+    - how can i create connection and request.
+    - how can i create connection and request?
+    
+- intent: Connection_request
+  examples: |
+    - what should i do to register a new account for PTCL connection?
+    - How can i register for a new account to establish a connection?
+    - i want to register for a new connection request, what should i do?
+    - How can i establish a connection request?
+    - how can i place a new order for connection in PTCL?
+    - how can i place a new order for connection in PTCL Touch app?
+    - how can i place order for connection.?
+    - how can i create connection?
+
+- intent: Complaint
+  examples: |
+    - How can i complain about my coonection?
+    - My internet is not that fast, how can i complain about that?
+    - i want to complain about my connection, what  should i do?
+    - i want to complain about my internet speed, what  should i do?
+    - My internet is very slow, what can be done?
+    - My internet is slow, what should i do to complain?
+
+- intent: goodbye
+  examples: |
+    - cu
+    - bye,Have a nice time
+    - good by
+    - cee you later
+    - good night
+    - bye
+    - goodbye
+    - have a nice day
+    - see you around
+    - bye bye
+    - see you later
+
+- intent: affirm
+  examples: |
+    - yes
+    - y
+    - indeed
+    - of course
+    - that sounds good
+    - correct
+
+- intent: deny
+  examples: |
+    - no
+    - n
+    - never
+    - I don't think so
+    - don't like that
+    - no way
+    - not really
+
+- intent: bot_challenge
+  examples: |
+    - are you a bot?
+    - are you a human?
+    - am I talking to a bot?
+    - am I talking to a human?

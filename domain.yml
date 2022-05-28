@@ -1,0 +1,44 @@
+version: "3.1"
+
+intents:
+  - greet
+  - goodbye
+  - affirm
+  - deny
+  - register
+  - Connection_request
+  - Complaint
+  - bot_challenge
+
+responses:
+  utter_register:
+  - text: "To create your account on PTCLTouch App, you need to click on Create an Account. You have to put your name, CNIC (Registered with PTCL services), mobile number and email ID. You also have to select your password and then confirm the same password by putting it in again (Password should have at least 8 characters containing upper case, lower case, numeric digits and one special character). After completing this information, click on ‘Create an Account’."
+
+  utter_Connection_request:
+  - text: "To place new order, you can open the PTCLTouch App and follow the below given steps:
+            Tap on Shop
+            Select Category from where you can check Smart TV, Internet & Telephone packages
+            You can select the required product and service by tapping on See Detail
+            Add to Cart & check package details by tapping on Check Out
+            Tap on Complete your Order to provide necessary details
+            Tap on Submit Order"
+
+  utter_Complaint:
+  - text:  "To register complaint, simply follow below instructions:\\nTap on Register Complaint option\\nTap on the product/service that you are having an issue with such as Smart TV, CharJi, internet, telephone, etc.\\nProvide the requested details for registering the complaint\\nTap on Send to complete the process\\nEnter OTP that you will receive on the registered mobile number"
+  utter_did_that_help:
+  - text: "Did that help you?"
+
+  utter_greet:
+  - text: "Hey, How are you?"
+  utter_happy:
+  - text: "Great, carry on!"
+
+  utter_goodbye:
+  - text: "Bye"
+
+  utter_iamabot:
+  - text: "I am a bot, powered by Rasa."
+
+session_config:
+  session_expiration_time: 60
+  carry_over_slots_to_new_session: true

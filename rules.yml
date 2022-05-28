@@ -1,0 +1,23 @@
+version: "3.1"
+
+rules:
+
+- rule: Tell about registration anytime the user says register
+  steps:
+  - intent: register
+  - action: utter_resgister
+
+- rule: Tell about Connection_request anytime the user says Connection
+  steps:
+  - intent: Connection_request
+  - action: utter_Connection_request
+
+- rule: Tell about Complaint anytime the user says Complaint
+  steps:
+  - intent: Complaint
+  - action: utter_Complaint
+
+- rule: Say 'I am a bot' anytime the user challenges
+  steps:
+  - intent: bot_challenge
+  - action: utter_iamabot

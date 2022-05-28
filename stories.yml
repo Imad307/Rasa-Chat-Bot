@@ -1,0 +1,63 @@
+version: "3.1"
+
+stories:
+
+- story: register 1
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: register
+  - action: utter_register
+  - action: utter_did_that_help
+  - intent: deny
+  - action: utter_goodbye
+
+- story: register 2
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: register
+  - action: utter_register
+  - action: utter_did_that_help
+  - intent: affirm
+  - action: utter_happy
+
+- story: Connection_request
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: Connection_request
+  - action: utter_Connection_request
+  - action: utter_did_that_help
+  - intent: deny
+  - action: utter_goodbye
+
+- story: Connection_request
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: Connection_request
+  - action: utter_Connection_request
+  - action: utter_did_that_help
+  - intent: affirm
+  - action: utter_happy
+
+- story: Complaint
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: Complaint
+  - action: utter_Complaint
+  - action: utter_did_that_help
+  - intent: affirm
+  - action: utter_happy
+
+- story: Complaint
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: Complaint
+  - action: utter_Complaint
+  - action: utter_did_that_help
+  - intent: deny
+  - action: utter_goodbye
