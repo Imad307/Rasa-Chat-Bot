@@ -11,6 +11,10 @@ stories:
   - action: utter_did_that_help
   - intent: deny
   - action: utter_goodbye
+  - intent: bot_challenge
+  - action: utter_iamabot
+  - intent: goodbye
+  - action: utter_goodbye
 
 - story: register 2
   steps:
@@ -21,6 +25,11 @@ stories:
   - action: utter_did_that_help
   - intent: affirm
   - action: utter_happy
+  - action: utter_else
+  - intent: bot_challenge
+  - action: utter_iamabot
+  - intent: goodbye
+  - action: utter_goodbye
 
 - story: Connection_request
   steps:
@@ -30,6 +39,10 @@ stories:
   - action: utter_Connection_request
   - action: utter_did_that_help
   - intent: deny
+  - action: utter_goodbye
+  - intent: bot_challenge
+  - action: utter_iamabot
+  - intent: goodbye
   - action: utter_goodbye
 
 - story: Connection_request
@@ -41,6 +54,11 @@ stories:
   - action: utter_did_that_help
   - intent: affirm
   - action: utter_happy
+  - action: utter_else
+  - intent: bot_challenge
+  - action: utter_iamabot
+  - intent: goodbye
+  - action: utter_goodbye
 
 - story: Complaint
   steps:
@@ -51,6 +69,11 @@ stories:
   - action: utter_did_that_help
   - intent: affirm
   - action: utter_happy
+  - action: utter_else
+  - intent: bot_challenge
+  - action: utter_iamabot
+  - intent: goodbye
+  - action: utter_goodbye
 
 - story: Complaint
   steps:
@@ -60,4 +83,95 @@ stories:
   - action: utter_Complaint
   - action: utter_did_that_help
   - intent: deny
+  - action: utter_goodbye
+  - intent: bot_challenge
+  - action: utter_iamabot
+  - intent: goodbye
+  - action: utter_goodbye
+
+
+- story: check_data
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: check_data
+  - action: utter_check_data
+  - action: utter_did_that_help
+  - intent: deny
+  - action: utter_goodbye
+  - intent: bot_challenge
+  - action: utter_iamabot
+  - intent: goodbye
+  - action: utter_goodbye
+
+
+- story: check_data
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: check_data
+  - action: utter_check_data
+  - action: utter_did_that_help
+  - intent: affirm
+  - action: utter_goodbye
+  - intent: bot_challenge
+  - action: utter_iamabot
+  - intent: goodbye
+  - action: utter_goodbye
+
+- story: pay_bill
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: pay_bill
+  - action: utter_pay_bill
+  - action: utter_did_that_help
+  - intent: deny
+  - action: utter_goodbye
+  - intent: bot_challenge
+  - action: utter_iamabot
+  - intent: goodbye
+  - action: utter_goodbye
+
+- story: pay_bill
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: pay_bill
+  - action: utter_pay_bill
+  - action: utter_did_that_help
+  - intent: affirm
+  - action: utter_goodbye
+  - intent: bot_challenge
+  - action: utter_iamabot
+  - intent: goodbye
+  - action: utter_goodbye
+
+- story: recover
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: recover
+  - action: utter_recover
+  - action: utter_did_that_help
+  - intent: deny
+  - action: utter_goodbye
+  - intent: bot_challenge
+  - action: utter_iamabot
+  - intent: goodbye
+  - action: utter_goodbye
+
+
+- story: recover
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: recover
+  - action: utter_recover
+  - action: utter_did_that_help
+  - intent: affirm
+  - action: utter_goodbye
+  - intent: bot_challenge
+  - action: utter_iamabot
+  - intent: goodbye
   - action: utter_goodbye
