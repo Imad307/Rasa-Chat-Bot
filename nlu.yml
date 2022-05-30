@@ -1,6 +1,7 @@
 version: "3.1"
 
 nlu:
+
 - intent: greet
   examples: |
     - hey
@@ -25,6 +26,9 @@ nlu:
     - i want to establish a connection request how can i register?
     - how can i create connection and request.
     - how can i create connection and request?
+    - how do i sign up for?
+    - what can i do to register?
+    - what is the first step for internet connection?
     
 - intent: Connection_request
   examples: |
@@ -36,6 +40,7 @@ nlu:
     - how can i place a new order for connection in PTCL Touch app?
     - how can i place order for connection.?
     - how can i create connection?
+    - How can i use internet?
 
 - intent: Complaint
   examples: |
@@ -45,6 +50,41 @@ nlu:
     - i want to complain about my internet speed, what  should i do?
     - My internet is very slow, what can be done?
     - My internet is slow, what should i do to complain?
+    - i want to complain about my internet?
+    - internet connection is not good.
+    - steps to file a complaint.
+
+- intent: check_data
+  examples: |
+    - How can i check data usage through touch app?
+    - how to check data usage?
+    - i want to check my data usage, what should i do?
+    - is there a way to check my data usage?
+    - how do i know, how much data have i consumed?
+    - Steps to check data usage?
+    - how can i check my daily data usage?
+    - check my data usage.
+    - check my daily data usage.
+- intent: pay_bill
+  examples: |
+    - how can i pay my bill?
+    - how to pay bill?
+    - how to pay my connection bill?
+    - steps to pay my connection bill?
+    - where can i pay my connection bill?
+    - how do i pay for my connection
+    - where to pay bill?
+- intent: recover
+  examples: |
+    - how do i recover my username?
+    - i have forgot my username, what should i do?
+    - what could be done with forgotten user name?
+    - how do i recover my password?
+    - i have forgot my password, what should i do?
+    - what could be done with forgotten password?
+    - how do i recover my username and password?
+    - i have forgot my username, password what should i do?
+    - what could be done if i have forgot username or password?
 
 - intent: goodbye
   examples: |
@@ -68,6 +108,9 @@ nlu:
     - of course
     - that sounds good
     - correct
+    - thanks for helping
+    - thanks for you help
+    - yes, thanks for helping
 
 - intent: deny
   examples: |
@@ -78,10 +121,12 @@ nlu:
     - don't like that
     - no way
     - not really
+    - nothing
 
 - intent: bot_challenge
   examples: |
     - are you a bot?
     - are you a human?
+    - who are you?
     - am I talking to a bot?
     - am I talking to a human?
