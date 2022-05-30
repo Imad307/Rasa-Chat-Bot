@@ -8,33 +8,71 @@ intents:
   - register
   - Connection_request
   - Complaint
+  - check_data
+  - pay_bill
+  - recover
   - bot_challenge
 
 responses:
   utter_register:
-  - text: "To create your account on PTCLTouch App, you need to click on Create an Account. You have to put your name, CNIC (Registered with PTCL services), mobile number and email ID. You also have to select your password and then confirm the same password by putting it in again (Password should have at least 8 characters containing upper case, lower case, numeric digits and one special character). After completing this information, click on ‘Create an Account’."
+  - text: "To create your account on PTCLTouch App,
+           \"you need to click on Create an Account.\"
+           \"You have to put your name, CNIC (Registered with PTCL services), mobile number and email ID.\"
+           \"You also have to select your password and then confirm the same password by putting it in again\"
+           \"(Password should have at least 8 characters containing upper case, lower case, numeric digits and one special character).\"
+           \" After completing this information, click on ‘Create an Account’.\""
 
   utter_Connection_request:
   - text: "To place new order, you can open the PTCLTouch App and follow the below given steps:
-            Tap on Shop
-            Select Category from where you can check Smart TV, Internet & Telephone packages
-            You can select the required product and service by tapping on See Detail
-            Add to Cart & check package details by tapping on Check Out
-            Tap on Complete your Order to provide necessary details
-            Tap on Submit Order"
+            \"Tap on Shop\"
+            \"Select Category from where you can check Smart TV, Internet & Telephone packages\"
+            \"You can select the required product and service by tapping on See Detail\"
+            \"Add to Cart & check package details by tapping on Check Out\"
+            \"Tap on Complete your Order to provide necessary details\"
+            \"Tap on Submit Order\""
 
   utter_Complaint:
-  - text:  "To register complaint, simply follow below instructions:\\nTap on Register Complaint option\\nTap on the product/service that you are having an issue with such as Smart TV, CharJi, internet, telephone, etc.\\nProvide the requested details for registering the complaint\\nTap on Send to complete the process\\nEnter OTP that you will receive on the registered mobile number"
+  - text:  "To register complaint, simply follow below instructions:
+            \"Tap on Register Complaint option\" 
+            \"Tap on the product/service that you are having an issue with such as Smart TV, CharJi, internet, telephone, etc.\" 
+            \"Provide the requested details for registering the complaint\" \"Tap on Send to complete the process\" 
+            \"Enter OTP that you will receive on the registered mobile number\""
+  
+  utter_check_data:
+  - text: "To check your data usage, simply follow below instructions:
+
+           \"Login to PTCLTouch App\"
+           \"Tap on Data Usage\"
+           \"Select the linked telephone number to get usage details\"
+           \"Click on View Details to see the day-wise usage\""
+  
+  utter_pay_bill: 
+  - text: "Follow the below instructions to pay the bill through your Account ID:
+           \"Login to PTCLTouch App\"
+           \"Tap on Bill Inquiry & Payment\"
+           \"From the Bill Payment & Recharge section, tap on Account ID\"
+           \"Enter your Account ID and Submit.\"
+           \"Select payment method Credit/Debit Card.\"
+           \"Click on Pay Now\""
+  utter_recover: 
+  - text: "If you already have an account and have forgotten your username or password, 
+           \"you can recover it by clicking on ‘Forget Username/Password’.\"
+           \" You can put your registered mobile number or email ID to recover the username or password.\""
+  
   utter_did_that_help:
   - text: "Did that help you?"
 
   utter_greet:
-  - text: "Hey, How are you?"
+  - text: "Hey, What can i do for you?"
+
   utter_happy:
   - text: "Great, carry on!"
 
+  utter_else:
+  - text: "What else can i do for you?"
+
   utter_goodbye:
-  - text: "Bye"
+  - text: "Bye, Hope it helped"
 
   utter_iamabot:
   - text: "I am a bot, powered by Rasa."
