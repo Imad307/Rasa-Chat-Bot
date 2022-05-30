@@ -2,6 +2,12 @@ version: "3.1"
 
 rules:
 
+- rule: Say `hello` when the user starts a conversation with intent `greet`
+  conversation_start: true
+  steps:
+  - intent: greet
+  - action: utter_greet
+
 - rule: Tell about registration anytime the user says register
   steps:
   - intent: register
@@ -16,6 +22,22 @@ rules:
   steps:
   - intent: Complaint
   - action: utter_Complaint
+
+- rule: if User ask about checking data
+  steps:
+  - intent: check_data
+  - action: utter_check_data
+
+- rule: if User ask about bill payment
+  steps:
+  - intent: pay_bill
+  - action: utter_pay_bill
+
+
+- rule: if User ask about password or username recovery
+  steps:
+  - intent: recover
+  - action: utter_recover
 
 - rule: Say 'I am a bot' anytime the user challenges
   steps:
